@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Intro from './Sections/Intro'
 import About from './Sections/About'
 import Contact from './Sections/Contact'
-import SampleWork from './Sections/SampleWork'
+import Folio from './Sections/Folio'
 import Footer from './Sections/Footer'
 
 export default class Page extends Component
@@ -22,7 +22,7 @@ export default class Page extends Component
       <div>
         <Intro/>
         <About/>
-        <SampleWork sampleWork={this.state.videoWalkthroughs}/>
+        <Folio sampleWork={this.state.videoWalkthroughs}/>
         <Contact/>
         <Footer />
       </div>

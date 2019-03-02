@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap'
 
-const SampleWork = ({sampleWork}) => {
+const Folio = ({sampleWork}) => {
     return (
         <div id="folio" className="sec-folio">
             <Container>
@@ -22,4 +22,4 @@ const SampleWork = ({sampleWork}) => {
     )
 }
 
-export default SampleWork
+export default Folio
