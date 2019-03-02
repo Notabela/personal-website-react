@@ -15,7 +15,7 @@ const Intro = () => {
     return (
     <div id="home" className="sec-main">
         <Navigation/>
-        <img id="profile_img" src="assets/daniel.jpg" alt="Daniel" />>
+        <img id="profile_img" src="https://i.imgur.com/FeuHqbe.jpg" alt="Daniel" />>
         <h1 className="main-heading">I am <TypedReact options={options}/></h1>
     </div>
     )
