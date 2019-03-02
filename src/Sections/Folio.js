@@ -9,12 +9,12 @@ const Folio = ({sampleWork}) => {
             <Row>
                 {sampleWork.map( (image, i) => { 
                     return (
-                        <Col key={i} md={{ size: image.size }}>
+                        <Col key={i} md={{ size: image.size }} className="text-center">
                         <figure className="figure">
                             <a href={image.link} target="_blank" rel="noopener noreferrer">
                                 <img key={i} className="center-block figure-img img-fluid rounded" src={image.url} title='Video Walkthrough' alt='Video Walkthrough' />
                             </a>
-                            <figcaption class="figure-caption text-center">{image.caption}</figcaption>
+                            <figcaption className="figure-caption text-center">{image.caption}</figcaption>
                         </figure>
                         </Col>
                     )
