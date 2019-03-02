@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'animate.css'
 import './index.css';
 import Page from './Page';
 import * as serviceWorker from './serviceWorker';
