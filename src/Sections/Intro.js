@@ -2,16 +2,15 @@ import React from 'react';
 import TypedReact from '../Vendor/TypedReact'
 import Navigation from './Navigation'
 
-const Intro = () => {
+const Intro = ({captions}) => {
 
     var options = {
-        strings: ["a programmer...", "an engineer?", "a coder..?", "&lt;code/&gt;"],
+          strings: captions,
           typeSpeed: 40,
           backDelay: 900,
           backSpeed: 40
       }
 
-    //var typed = new Typed(".element", options);
     return (
     <div id="home" className="sec-main">
         <Navigation/>

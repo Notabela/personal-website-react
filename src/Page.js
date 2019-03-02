@@ -12,7 +12,8 @@ export default class Page extends Component
     super(props)
 
     this.state = {
-      videoWalkthroughs: this.props.videoWalkthroughs
+      videoWalkthroughs: this.props.videoWalkthroughs,
+      messageCaptions: this.props.messageCaptions
     }
   }
 
@@ -20,7 +21,7 @@ export default class Page extends Component
   {
     return(
       <div>
-        <Intro/>
+        <Intro captions={this.props.messageCaptions}/>
         <About/>
         <Folio sampleWork={this.state.videoWalkthroughs}/>
         <Contact/>

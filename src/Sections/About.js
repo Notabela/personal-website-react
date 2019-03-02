@@ -9,7 +9,7 @@ const About = () => {
                 <hr className="white-hr"/>
                 <Row>
                     <Col sm="12" md={{ size: 6, offset: 3 }}>
-                        <p className="about-text">Hello I'm Daniel, codename: notabela<br/> 
+                        <p className="about-text">Hello I'm Daniel<br/> 
                         Artist, Developer, Engineer and IT Enthusiast. <br />
                         My dream is to create a better world with &lt;code/&gt;<br/> <br/>
                         <a href="https://github.com/notabela" target="_blank" rel="noopener noreferrer">Checkout my latest projects on Github</a><br />
