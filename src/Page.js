@@ -7,5 +7,25 @@ import Footer from './Sections/Footer'
 
 export default class Page extends Component
 {
+  constructor(props)
+  {
+    super(props)
 
+    this.state = {
+      videoWalkthroughs: this.props.videoWalkthroughs
+    }
+  }
+
+  render()
+  {
+    return(
+      <div>
+        <Intro/>
+        <About/>
+        <SampleWork sampleWork={this.state.videoWalkthroughs}/>
+        <Contact/>
+        <Footer />
+      </div>
+    )
+  }
 }
