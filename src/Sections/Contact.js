@@ -1,11 +1,28 @@
 import React from 'react';
 import {Container, Row, Col, Form, FormGroup, Input, Button} from 'reactstrap'
+import VisibilitySensor from 'react-visibility-sensor'
 
 export default class Contact extends React.Component 
 {
+    constructor(props)
+    {
+        super(props)
+
+        this.state = {
+            contactVisible: false
+        }
+    }
+    
+    onContactPageVisible = (isVisible) => {
+
+        this.setState({
+            contactVisible: isVisible
+        })
+    }
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log('form submitted')
+        document.querySelector("#contactForm").reset()
+        alert("submissions are disabled, please reach out to me via social media/email")
     }
 
     render()
@@ -13,7 +30,10 @@ export default class Contact extends React.Component
         return (
             <div id="contact" className="sec-contact">
                 <Container>
-                <h1 className="section-heading">Get in Touch</h1><hr className="white-hr"/>
+                <VisibilitySensor onChange={this.onContactPageVisible}>
+                    <h1 className={ this.state.contactVisible ? "section-heading animated tada" : "section-heading" }>Get in Touch</h1>
+                </VisibilitySensor>
+                <hr className="white-hr"/>
                 <Row>
                     <Col lg={{ size: 12}}>
                         <Form id="contactForm" name="sentMessage" onSubmit={this.handleSubmit} noValidate="">
