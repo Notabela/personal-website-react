@@ -9,7 +9,7 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col>
-                    <p className="text-center light-white-font">
+                    <p className="text-center light-white-font social">
                         <a href="https://www.facebook.com/notabela" title="Facebook" target="facebook"><FaFacebookF color="#3b5998"/></a>
                         &nbsp;&nbsp;&bull;&nbsp;&nbsp;
                         <a href="https://www.linkedin.com/in/daniel-obeng-b22759111" title="Linkedin" target="linkedin"><FaLinkedinIn color="#007bb5"/></a>
@@ -24,7 +24,7 @@ const Footer = () => {
                 </Row>
                 <Row className="text-center small">
                     <Col>
-                        <p><FaLaptopCode color='blue'/> with <TiHeartFullOutline color='red'/> by notabela</p>
+                        <p><FaLaptopCode color='blue' size="1.2em"/> with <span id="nota-heart"><TiHeartFullOutline color='red' size="1.5em"/></span> by notabela</p>
                     </Col>
                 </Row>
             </Container>

@@ -31,7 +31,7 @@ export default class Contact extends React.Component
             <div id="contact" className="sec-contact">
                 <Container>
                 <VisibilitySensor onChange={this.onContactPageVisible}>
-                    <h1 className={ this.state.contactVisible ? "section-heading animated tada" : "section-heading" }>Get in Touch</h1>
+                    <h1 className={ this.state.contactVisible ? "section-heading animated pulse" : "section-heading" }>Get in Touch</h1>
                 </VisibilitySensor>
                 <hr className="white-hr"/>
                 <Row>

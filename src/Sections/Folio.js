@@ -26,7 +26,7 @@ export default class Folio extends React.Component
             <div id="folio" className="sec-folio">
                 <Container>
                 <VisibilitySensor onChange={this.onFolioPageVisible}>
-                    <h1 className={ this.state.folioVisible ? "animated tada" : "" }>Sample Work</h1>
+                    <h1 className={ this.state.folioVisible ? "animated pulse" : "" }>Sample Work</h1>
                 </VisibilitySensor>
                 <hr className="green-hr"/>
                 <Row>

@@ -221,6 +221,18 @@ hr {
   margin-top: 15px; 
 }
 
+
+.social svg {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.social svg:hover {
+    -ms-transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+}
+
 .sec-folio img {
   -webkit-filter: brightness(100%);
 }
@@ -244,6 +256,11 @@ hr {
             animation: blinker 1s linear infinite;
 }
 
+#nota-heart svg{
+  -webkit-animation: notaheartbeat 1s infinite;
+  animation: notaheartbeat 1s linear infinite;
+}
+
 @-webkit-keyframes blinker {
     50% {
         opacity: 0;
@@ -256,4 +273,32 @@ hr {
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
+}
+
+@keyframes notaheartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
 }
