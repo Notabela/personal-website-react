@@ -8,17 +8,17 @@ import * as serviceWorker from './serviceWorker';
 
 const videoWalkthroughs = [
     {size: 4, 
-     url: 'http://imgur.com/2GXHgHp.gif',
+     url: 'https://i.imgur.com/2GXHgHp.gif',
      link:'https://github.com/Notabela/2048',
      caption: 'Implementation of the popular 2048 Game using Python and PyGame'
     },
     {size: 4, 
-     url: 'http://i.imgur.com/WDz83Ni.gif', 
+     url: 'https://i.imgur.com/WDz83Ni.gif', 
      link:'https://github.com/Notabela/belaShare', 
      caption: 'A photo sharing iOS app using Parse as its backend.'
     },
     {size: 4, 
-     url: 'http://i.imgur.com/E5XN9eb.gif',
+     url: 'https://i.imgur.com/E5XN9eb.gif',
      link: 'https://github.com/Notabela/Twitter-Redux',
      caption: 'A basic twitter iOS app to read and compose tweets using the Twitter API.'
     },
