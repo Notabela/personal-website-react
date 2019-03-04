@@ -91,11 +91,10 @@ section {
   padding: 5em 0;
 }
 
-@media screen and (max-width: 768px) and (min-width: 485px) {
+
   form {
-    max-width: 70%;
+    max-width: 100%;
   }
-}
 
 ul {
   padding: 0;
@@ -197,7 +196,7 @@ hr {
   margin-bottom: 5%;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 20px) {
+@media screen and (max-width: 575px) and (min-width: 20px) {
   #profile_img {
     max-width: 70%;
     margin-bottom: 15%;
@@ -205,6 +204,17 @@ hr {
   .main-heading{
     padding-bottom: 5%;
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 980px) and (min-width: 576px) {
+  #profile_img {
+    max-width: 70%;
+    margin-bottom: 15%;
+  }
+  .main-heading{
+    padding-bottom: 5%;
+    font-size: 2em;
   }
 }
 

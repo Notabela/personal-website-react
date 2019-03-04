@@ -37,7 +37,7 @@ export default class Contact extends React.Component
                 <Row>
                     <Col lg={{ size: 12}}>
                         <Form id="contactForm" name="sentMessage" onSubmit={this.handleSubmit} noValidate="">
-                            <Row>
+                            <Row className="text-center">
                                 <Col md={{ size: 6}}>
                                     <FormGroup>
                                         <Input type="text" className="form-control" placeholder="Your Name" id="name" required={true}/>
