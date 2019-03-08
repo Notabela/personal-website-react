@@ -15,9 +15,12 @@ export default class Folio extends React.Component
 
     onFolioPageVisible = (isVisible) => {
 
-        this.setState({
-            folioVisible: isVisible
-        })
+        if (isVisible)
+        {
+            this.setState({
+                folioVisible: isVisible
+            })
+        }
     }
 
     render()
@@ -26,7 +29,7 @@ export default class Folio extends React.Component
             <div id="folio" className="sec-folio">
                 <Container>
                 <VisibilitySensor onChange={this.onFolioPageVisible}>
-                    <h1 className={ this.state.folioVisible ? "animated pulse" : "" }>Sample Work</h1>
+                    <h1 className={ this.state.folioVisible ? "animated fadeInRight" : "hidden" }>Sample Work</h1>
                 </VisibilitySensor>
                 <hr className="green-hr"/>
                 <Row>

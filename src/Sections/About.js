@@ -15,9 +15,12 @@ export default class About extends React.Component
 
     onAboutPageVisible = (isVisible) => {
 
-        this.setState({
-            aboutVisible: isVisible
-        })
+        if (isVisible)
+        {
+            this.setState({
+                aboutVisible: isVisible
+            })
+        }
     }
 
     render()
@@ -26,7 +29,7 @@ export default class About extends React.Component
             <div id="about" className="sec-about">
             <Container>
                 <VisibilitySensor onChange={this.onAboutPageVisible}>
-                    <h1 className={ this.state.aboutVisible ? "animated pulse" : "" }>A Little about me...</h1>
+                    <h1 className={ this.state.aboutVisible ? "animated fadeInLeft" : "hidden" }>A Little about me...</h1>
                 </VisibilitySensor>
                 <hr className="white-hr"/>
                 <Row>

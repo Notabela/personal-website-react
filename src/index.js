@@ -34,7 +34,7 @@ const videoWalkthroughs = [
     },
 ]
 
-const messageCaptions = ["an enginer..", "a programa..", "a coder..", "&lt;code/&gt;"]
+const messageCaptions = ["an engineer..", "a developer..", "a coder..", "&lt;code/&gt;"]
 
 ReactDOM.render(<Page videoWalkthroughs={videoWalkthroughs}
                      messageCaptions={messageCaptions} />, document.getElementById('root'));

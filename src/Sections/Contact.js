@@ -15,9 +15,12 @@ export default class Contact extends React.Component
     
     onContactPageVisible = (isVisible) => {
 
-        this.setState({
-            contactVisible: isVisible
-        })
+        if (isVisible)
+        {
+            this.setState({
+                contactVisible: isVisible
+            })
+        }
     }
     handleSubmit = (event) => {
         event.preventDefault();
@@ -31,7 +34,7 @@ export default class Contact extends React.Component
             <div id="contact" className="sec-contact">
                 <Container>
                 <VisibilitySensor onChange={this.onContactPageVisible}>
-                    <h1 className={ this.state.contactVisible ? "section-heading animated pulse" : "section-heading" }>Get in Touch</h1>
+                    <h1 className={ this.state.contactVisible ? "section-heading animated fadeInUp" : "section-heading hidden" }>Get in Touch</h1>
                 </VisibilitySensor>
                 <hr className="white-hr"/>
                 <Row>
